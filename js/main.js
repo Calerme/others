@@ -52,7 +52,9 @@ $(function () {
 
     // 给 window 添加 scroll 事件
     window.addEventListener('scroll', function () {
-       letIframeLoad(iframes);
+        letIframeLoad(iframes);
+        // 滚动时隐藏菜单
+        $('.navbar-collapse').collapse('hide');
     });
     // 预加载 gif 图，加载好后替换网页中的 jpg
     letGifIn();
